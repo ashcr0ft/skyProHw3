@@ -50,7 +50,7 @@ public class Main {
         short seat = 60;
         short total = 102;
         if (passengers < seat) {
-            System.out.println("Еще есть сидячие места");
+            System.out.println("Есть сидячие и стоячие места");
         } else if (passengers >= seat && passengers < total) {
             System.out.println("Сидячих мест нет. Только стоячие");
         } else {
@@ -58,16 +58,14 @@ public class Main {
         }
 
         int one = 10;
-        int two = 20;
+        int two = 11;
         int three = 9;
-        if (one > two && one > three){
-            System.out.println(one);
-        }
-        else if (two > one && two > three){
-            System.out.println(two);
-        }
-        else {
-            System.out.println(three);
+        if (one >= two && one >= three) {
+            System.out.println("one =" + one);
+        } else if (two >= one && two >= three) {
+            System.out.println("two =" + two);
+        } else {
+            System.out.println("three =" + three);
         }
 
 
