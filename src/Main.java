@@ -7,7 +7,31 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
-        short creation = 2015;
+
+        clientOS = 1;
+        short clientDeviceYear = 2018;
+        if (clientDeviceYear < 2015) {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                    break;
+                case 1:
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                    break;
+            }
+        } else {
+            switch (clientOS) {
+                case 0:
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                    break;
+                case 1:
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                    break;
+            }
+
+        }
+
+
 
     }
 }
